@@ -1,5 +1,5 @@
 {% set name = "cwcwidth" %}
-{% set version = "0.1.5" %}
+{% set version = "0.1.6" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cwcwidth-{{ version }}.tar.gz
-  sha256: 2c840e7d85f6de45c45986b416d79312c91882e1121b78d4c347e49c4238c09d
+  sha256: 1b31da599c9f0cf41f39ed10c1ceaa01d6024e31c6cd9aea2885b1f2a6d15fba
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
