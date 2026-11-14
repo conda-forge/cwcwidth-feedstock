@@ -1,5 +1,5 @@
 {% set name = "cwcwidth" %}
-{% set version = "0.1.12" %}
+{% set version = "0.1.13" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/cwcwidth-{{ version }}.tar.gz
-  sha256: bfc16531d1246dd2558eb9b3a63aa37a9978672b956860dc5426da2343ebf366
+  sha256: aaaae16290be1beb45151601ad1c473db40c4e41b838076a925ded8f1e6aae3f
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py <= 310]
 
